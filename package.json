@@ -1,0 +1,14 @@
+{
+  "name": "resource-counter",
+  "version": "1.0.0",
+  "description": "Program that tracks five different resources",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Laker",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
