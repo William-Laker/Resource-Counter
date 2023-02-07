@@ -25,17 +25,16 @@ class Resource {
         addButton.textContent = "+";
         addButton.id = `add${i}`;
         section.append(addButton);
-        addButton.addEventListener('click', increaseCounter);
+        addButton.addEventListener('click', changeCounter);
         this.add = addButton.id
 
         const subButton = document.createElement("button");
         subButton.textContent = "-";
-        subButton.id = `minus${i}`;
+        subButton.id = `sub${i}`;
         section.append(subButton);
-        subButton.addEventListener('click', decreaseCounter);
+        subButton.addEventListener('click', changeCounter);
         this.sub = subButton.id
     }
-
 }
 
 
@@ -51,14 +50,26 @@ function buildApp() {
 
 }
 
-function increaseCounter(event) {  
-    const button = event.target;
-    console.log(button)
+function changeCounter() {  
+    const id = this.id;
+    const operation = id[0]
+    console.log(operation)
+    const numb = id[3]
+    
+    const counter = document.querySelector(`#counter${numb}`)
+    console.log(counter)
+    if (operation === "a") {
+        counter.textContent += 1;
+    }
+    
+    else if (operation === "s") {
+        counter.textContent -= 1;
+    }
 }
 
-function decreaseCounter(event) {  
-    console.log(event)
-}
+// function decreaseCounter(event) {  
+//     console.log(event)
+// }
 
 
 window.addEventListener('load', init);
