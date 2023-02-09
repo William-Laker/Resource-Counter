@@ -37,7 +37,6 @@ class Resource {
     }
 }
 
-
 function init() {
     buildApp();
 }
@@ -47,7 +46,6 @@ function buildApp() {
         let newCounter = new Resource;
         newCounter.createCounter(i);
     }
-
 }
 
 function changeCounter() {  
@@ -66,10 +64,5 @@ function changeCounter() {
         counter.textContent = currentValue;
     }
 }
-
-// function decreaseCounter(event) {  
-//     console.log(event)
-// }
-
 
 window.addEventListener('load', init);

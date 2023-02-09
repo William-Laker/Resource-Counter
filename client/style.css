@@ -6,8 +6,8 @@ body {
 main {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(5, 20em);
-    grid-template-rows: repeat(1, 20em);
+    grid-template-columns: repeat(5, 15em);
+    grid-template-rows: repeat(1, 15em);
 }
 
 #sect1, #sect2, #sect3, #sect4, #sect5 {
