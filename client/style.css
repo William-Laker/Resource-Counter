@@ -6,14 +6,21 @@ body {
 main {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(5, 15em);
-    grid-template-rows: repeat(1, 15em);
+    grid-template-columns: repeat(5, 12em);
+    grid-template-rows: repeat(1, 16em);
+    align-content: center;
+    justify-content: center;
 }
 
 #sect1, #sect2, #sect3, #sect4, #sect5 {
     border: solid black thin;
+    border-width: 0.1em;
 }
 
 p {
     font-size: 4em; 
+}
+
+#info {
+    font-size: medium;
 }
