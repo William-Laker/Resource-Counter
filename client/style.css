@@ -1,12 +1,27 @@
+h1 {
+    color: aliceblue;
+    font-size: 150%;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000; /* https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
+
+}
+
 body {
     text-align: center;
     margin: 2em auto;
 }
 
+#header {
+    height: 8em;
+	line-height: 8em;
+	text-align: center;
+	background: #303e49;
+}
+
 main {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(5, 12em);
+    grid-template-columns: repeat(5, 20em);
     grid-template-rows: repeat(1, 16em);
     align-content: center;
     justify-content: center;
@@ -17,6 +32,14 @@ main {
     border-width: 0.1em;
 }
 
+#add1, #add2, #add3, #add4, #add5 {
+    width: 5em;
+}
+
+#sub1, #sub2, #sub3, #sub4, #sub5 {
+    width: 5em;
+}
+    
 p {
     font-size: 4em; 
 }
