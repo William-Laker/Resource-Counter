@@ -1,19 +1,28 @@
+
 h1 {
+    margin: 0em;
     color: aliceblue;
     font-size: 150%;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
     1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000; /* https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
+}
 
+h2 {
+    color: aliceblue;
+    font-size: 120%;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000; /* https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
 }
 
 body {
     text-align: center;
-    margin: 2em auto;
+    margin: 0em;
 }
 
 #header {
+    margin: 0em;
     height: 8em;
-	line-height: 8em;
+	line-height: 2em;
 	text-align: center;
 	background: #303e49;
 }
