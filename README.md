@@ -21,6 +21,6 @@ Express
 
 ## Future Work
 
-    Add the ability to change the name of a resource
-    Add the ability to as many resource counters as the user wants
+Add the ability to change the name of a resource
+Add the ability to as many resource counters as the user wants
 
