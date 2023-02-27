@@ -10,6 +10,17 @@ and Root.
 
 ## Getting Started
 
+### Installation 
+
+
 ### Dependencies
 
+Node 
+NPM
 Express 
+
+## Future Work
+
+    - Add the ability to change the name of a resource
+    - Add the ability to as many resource counters as the user wants
+
