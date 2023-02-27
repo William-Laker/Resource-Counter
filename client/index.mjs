@@ -6,9 +6,13 @@ function createCounter(i) {
     const location = document.querySelector("main")
 
     const section = document.createElement("section");
-    section.textContent = `Resource ${i}`;
     section.id = `sect${i}`;
     location.append(section);
+
+    const title = document.createElement("h4")
+    title.id = `title${i}`
+    title.textContent = `Resourse ${i}`
+    section.append(title);
 
     const counter = document.createElement("p");
     counter.textContent = 0;

@@ -1,6 +1,7 @@
 
 h1 {
     margin: 0em;
+    margin-top: 1em;
     color: aliceblue;
     font-size: 150%;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
@@ -8,6 +9,7 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 2em; 
     color: aliceblue;
     font-size: 120%;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
@@ -17,6 +19,7 @@ h2 {
 body {
     text-align: center;
     margin: 0em;
+    background: #303e49;
 }
 
 #header {
@@ -29,28 +32,48 @@ body {
 
 main {
     text-align: center;
+    margin-top: 2em;
     display: grid;
-    grid-template-columns: repeat(5, 20em);
-    grid-template-rows: repeat(1, 16em);
+    grid-template-columns: repeat(5, 22em);
+    grid-template-rows: repeat(1, 18em);
     align-content: center;
     justify-content: center;
 }
 
 #sect1, #sect2, #sect3, #sect4, #sect5 {
+    height: 16em;
+    width: 20em;
     border: solid black thin;
     border-width: 0.1em;
+    background-color: white;
+    outline: 4mm ridge rgba(17, 13, 56, 0.507); /* https://developer.mozilla.org/en-US/docs/Web/CSS/border */
+}
+
+#title1, #title2, #title3, #title4, #title5 {
+    font: italic small-caps bold 16px/2 cursive; /* https://developer.mozilla.org/en-US/docs/Web/CSS/font */
+    margin: 0em;
+    margin-top: 0.5em;
 }
 
 #add1, #add2, #add3, #add4, #add5 {
     width: 5em;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+
 }
 
 #sub1, #sub2, #sub3, #sub4, #sub5 {
     width: 5em;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
     
 p {
-    font-size: 4em; 
+    font: 4em "Fira Sans", monospace;
+    margin: 0em;
+    padding: 0.81em;
 }
 
 #info {
