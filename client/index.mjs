@@ -13,6 +13,7 @@ function createCounter(i) {
     title.id = `title${i}`
     title.textContent = `Resourse ${i}`
     section.append(title);
+    title.addEventListener(onclick, changeTitle);
 
     const counter = document.createElement("p");
     counter.textContent = 0;
@@ -53,6 +54,10 @@ function changeCounter() {
         const currentValue = --counter.textContent;
         counter.textContent = currentValue;
     }
+}
+
+function changeTitle() {
+    console.log("mMepe");
 }
 
 window.addEventListener('load', init);
